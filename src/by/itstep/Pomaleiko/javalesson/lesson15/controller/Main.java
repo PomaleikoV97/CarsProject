@@ -6,6 +6,9 @@ import by.itstep.Pomaleiko.javalesson.lesson15.view.ConsolePrinter;
 
 public class Main {
     public static void main(String[] args) {
+
+        Car[] cars = new Car[5];
+
         Car car1 = new Car();
         car1.name = "ford transit";
         car1.price = 3000;
@@ -24,7 +27,7 @@ public class Main {
         car4.price = 5450;
 
         int maxPrice = CarManager.findExpensiveCar(car1, car2, car3, car4);
-        int total = CarManager.calculateTotalPrice(car1, car2, car3, car4);
+        int total = CarManager.calculateTotalPrice(cars);
 
         String msg = String.format("Max car price = %d", maxPrice);
         msg += String.format("\nTotal car price = $%d", total);
