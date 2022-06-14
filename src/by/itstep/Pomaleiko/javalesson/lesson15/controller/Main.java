@@ -14,6 +14,7 @@ public class Main {
         car2.name = "opel vectra";
         car2.price = 4500;
 
+
         Car car3 = new Car();
         car3.name = "BMW X5";
         car3.price = 7000;
